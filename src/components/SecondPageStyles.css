@@ -1,0 +1,205 @@
+.second-container {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #F7A655 !important;
+}
+.header-container {
+    /*background-color: #f0f0f0; !* Change the background color as desired *!*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh; /* Change the height as desired */
+}
+.header-text {
+    font-size: 3.5rem; /* Change the font size as desired */
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.things-we-do {
+    display: flex;
+    justify-content: center;
+    /*background-color: #fff;*/
+}
+.my-box {
+    position: relative;
+    display: inline-block;
+    height: 250px;
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.my-box .background-block {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    float: left;
+    z-index: 1;
+}
+.my-box .icons {
+    position: relative;
+    top: 50%;
+    height: auto;
+    width: 10rem;
+    z-index: 2;
+    transform: translateY(-60%);
+}
+.my-box span {
+    font-size: 1.5rem;
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -30%);
+}
+.my-box svg {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    color: #000;
+    width: 60px;
+    height: auto;
+    z-index: 10;
+}
+.my-box .Red-Smile {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100px;
+    height: auto;
+    z-index: 2;
+    transform: translateX(-25px);
+}
+.Gray-Smile {
+    position: absolute;
+    bottom: -10vh;
+    right: -7vw;
+    z-index: 4;
+}
+.Gray-Smile img {
+    width: 400px;
+    height: auto;
+}
+.JoinTheFamilyButton {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.JoinTheFamilyButton a button {
+    color: black;
+    width: fit-content;
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    text-align: right;
+    width: 20vw;
+    border: none;
+    border-radius: 50px;
+    margin-top: 15px;
+    background: #F2F278;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+.JoinTheFamilyButton a button:hover {
+    background: #FA6938;
+    transform: scale(1.1);
+    color: black;
+}
+.JoinTheFamilyButton a img {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    width: 30px;
+    height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .Gray-Smile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .JoinTheFamilyButton {
+        position: relative;
+        width: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .JoinTheFamilyButton a Button {
+        width: fit-content;
+    }
+    .JoinTheFamilyButton a img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .things-we-do {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        /*transform: translateX(25%);*/
+    }
+
+    .second-container {
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .my-box:last-child {
+        display: none;
+    }
+
+    .Gray-Smile {
+        display: none;
+    }
+
+    .JoinTheFamilyButton {
+        position: relative;
+        width: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .JoinTheFamilyButton a Button {
+        width: fit-content;
+    }
+
+    .JoinTheFamilyButton a img {
+        display: none;
+    }
+
+}@media screen and (max-width: 750px) {
+    .things-we-do {
+        transform: translateX(25%);
+    }
+
+    .about-container {
+        height: 140vh;
+    }
+
+    .JoinTheFamilyButton {
+        position: relative;
+        width: fit-content;
+        padding-bottom: 30px;
+    }
+
+    .JoinTheFamilyButton a Button {
+        width: fit-content;
+    }
+
+    .JoinTheFamilyButton a img {
+        display: none;
+    }
+
+    .my-box:last-child {
+        display: block;
+    }
+
+}

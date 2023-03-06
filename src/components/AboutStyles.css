@@ -1,0 +1,45 @@
+.about-container {
+    height: 80vh;
+    width: 100vw;
+    position: relative;
+    background-color: #F7A655 !important;
+}
+.header-container h1 img {
+    padding-right: 20px;
+}
+.about-text {
+    display: flex;
+}
+.about-text p {
+    padding: 0 8rem 0 8rem;
+    font-size: 1rem;
+    line-height: 40px;
+}
+.about-text img {
+    position: relative;
+    right: 0;
+    text-wrap: normal;
+    padding-right: 1rem;
+    height: 250px;
+    width: auto;
+    justify-content: right;
+}
+.about-text span {
+    font-size: 1.3rem;
+}
+.about-text p img {
+    height: auto;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .about-container {
+        height: 115vh;
+    }
+}@media screen and (max-width: 700px) {
+    .about-container {
+        height: 140vh;
+    }
+}

@@ -1,0 +1,50 @@
+.content-container {
+    padding: 25px 0 25px 0;
+    height: fit-content;
+    width: 100vw;
+    position: relative;
+}
+.my-box img {
+    position: relative;
+    width: inherit;
+    height: inherit;
+}
+.Orange-Smile img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 325px;
+}
+@media screen and (max-width: 900px) {
+    .content-container {
+        padding: 0;
+        margin: 0;
+    }
+
+    .Orange-Smile img {
+        display: none;
+    }
+    .my-box {
+        position: relative;
+        transform: translateX(10%);
+    }
+@media screen and (max-width: 750px) {
+    .my-box {
+        position: relative;
+    }
+    .my-box:nth-child(2) {
+        display: none;
+    }
+}
+}@media screen and (max-width: 600px) {
+    .my-box:nth-child(2) {
+        display: none;
+    }
+
+    .my-box {
+        position: relative;
+        transform: translateX(0%);
+    }
+}
+
